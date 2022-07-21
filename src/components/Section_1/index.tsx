@@ -4,7 +4,7 @@ import Section from '../Section';
 function SectionOne() {
 	return (
 		<Section>
-			<Container fluid='lg'>
+			<>
 				<h1 className='my-4'>
 					Page Heading
 					<small>Secondary Text</small>
@@ -56,7 +56,7 @@ function SectionOne() {
 						</a>
 					</Col>
 				</Row>
-			</Container>
+			</>
 		</Section>
 	);
 }

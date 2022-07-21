@@ -1,5 +1,3 @@
-import { Col, Container } from 'react-bootstrap';
-
 import Section from '../Section';
 import ImgBox from './ImgBox';
 
@@ -27,14 +25,12 @@ function GallerySection() {
 	});
 
 	return (
-		<Section>
-			<Container className='overflow-hidden py-6' fluid='lg'>
-				<Col className='grid-wrapper'>
-					{arrImg.map((image, index) => {
-						return <ImgBox type={arrTypeSize[index]} key={image.id} {...image} />;
-					})}
-				</Col>
-			</Container>
+		<Section classStyles='overflow-hidden'>
+			<article className='grid-wrapper'>
+				{arrImg.map((image, index) => {
+					return <ImgBox type={arrTypeSize[index]} key={image.id} {...image} />;
+				})}
+			</article>
 		</Section>
 	);
 }

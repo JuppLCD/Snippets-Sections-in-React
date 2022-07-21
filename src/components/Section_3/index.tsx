@@ -1,11 +1,11 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 import Section from '../Section';
-import ImgHover_1 from './ImgHover_1';
-import ImgHover_2 from './ImgHover_2';
-import ImgHover_3 from './ImgHover_3';
-import ImgHover_4 from './ImgHover_4';
-import ImgHover_5 from './ImgHover_5';
+import ImgHover_1 from './ImgHover/ImgHover_1';
+import ImgHover_3 from './ImgHover/ImgHover_3';
+import ImgHover_4 from './ImgHover/ImgHover_4';
+import ImgHover_2 from './ImgHover/ImgHover_2';
+import ImgHover_5 from './ImgHover/ImgHover_5';
 
 import './styles.scss';
 
@@ -26,27 +26,25 @@ function CardsHoverSection() {
 
 	return (
 		<Section>
-			<Container className='py-5'>
-				<Row>
-					<Col md={6} className='mb-3'>
-						<ImgHover_1 {...item} />
-					</Col>
-					<Col md={6} className='mb-3'>
-						<ImgHover_2 {...item} />
-					</Col>
-					<Col md={6} className='mb-3'>
-						<ImgHover_3 {...item} />
-					</Col>
+			<Row>
+				<Col md={6} className='mb-3'>
+					<ImgHover_1 {...item} />
+				</Col>
+				<Col md={6} className='mb-3'>
+					<ImgHover_2 {...item} />
+				</Col>
+				<Col md={6} className='mb-3'>
+					<ImgHover_3 {...item} />
+				</Col>
 
-					<Col md={6} className='mb-3'>
-						<ImgHover_4 {...item} />
-					</Col>
+				<Col md={6} className='mb-3'>
+					<ImgHover_4 {...item} />
+				</Col>
 
-					<Col md={6} className='mb-3'>
-						<ImgHover_5 {...item_subtitle} />
-					</Col>
-				</Row>
-			</Container>
+				<Col md={6} className='mb-3'>
+					<ImgHover_5 {...item_subtitle} />
+				</Col>
+			</Row>
 		</Section>
 	);
 }
