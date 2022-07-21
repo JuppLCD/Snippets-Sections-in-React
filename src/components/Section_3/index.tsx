@@ -6,6 +6,7 @@ import ImgHover_3 from './ImgHover/ImgHover_3';
 import ImgHover_4 from './ImgHover/ImgHover_4';
 import ImgHover_2 from './ImgHover/ImgHover_2';
 import ImgHover_5 from './ImgHover/ImgHover_5';
+import ImgHover_6 from './ImgHover/ImgHover_6';
 
 import './styles.scss';
 
@@ -43,6 +44,9 @@ function CardsHoverSection() {
 
 				<Col md={6} className='mb-3'>
 					<ImgHover_5 {...item_subtitle} />
+				</Col>
+				<Col md={6} className='mb-3'>
+					<ImgHover_6 {...item} />
 				</Col>
 			</Row>
 		</Section>
